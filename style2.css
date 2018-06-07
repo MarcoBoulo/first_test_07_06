@@ -1,0 +1,96 @@
+*{padding:0; margin:0;}
+body, html { height: 100%; }
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jua', sans-serif;
+*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+
+#wrapper{
+  max-width: 900px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ligne{
+  position: relative;
+  padding: 25px;
+  padding-left: 160px;
+  padding-right: 150px;
+  background-color: #fff;
+  border:solid 1px #999;
+  border-bottom:none;
+  transition: all 500ms;
+}
+.ligne:hover{
+  z-index:10;
+  background-color: #c6d6ff;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.5);
+}
+.ligne:last-of-type{
+  border-bottom: solid 1px #999;
+}
+.ligne:before{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left:30px;
+  top:40px;
+  /* transform: translateY(-50%); */
+  background-image: url('images/avatar-1.jpg');
+  background-size: cover;
+  background-color: #000;
+  border-radius: 100%;
+  transition: all 500ms 500ms;
+}
+/* .ligne:after*/
+.poubelle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right:30px;
+  top:50%;
+  transform: translateY(-50%);
+  background-image: url('images/trash.png');
+  background-size: cover;
+}
+.ligne:nth-child(1):before{ background-image: url('images/avatar-1.jpg'); }
+.ligne:nth-child(2):before{ background-image: url('images/avatar-2.jpg'); }
+.ligne:nth-child(3):before{ background-image: url('images/avatar-3.jpg'); }
+.ligne:nth-child(4):before{ background-image: url('images/avatar-4.jpg'); }
+.ligne:nth-child(5):before{ background-image: url('images/avatar-5.jpg'); }
+
+.ligne:hover:before{
+  transform: rotate(360deg);
+}
+
+h1{
+  font-size:24px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+p{}
+
+  /* Le Compteur */
+
+  #message{
+    padding-bottom: 20px;
+    font-size:18px;
+  }
+  #count{
+    font-weight: 600;
+    color: #39d33e;
+  }
+  #count.alert{
+    color: #d33946;
+    font-size:30px;
+  }
