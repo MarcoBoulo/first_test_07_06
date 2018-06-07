@@ -1,11 +1,5 @@
-// alert('perso_script.js');
-// document.getElementById('h2').textContent += 'Modifié en javscript';
+// Ostralopitec
 
-// var newtext = 'qelque chose';
-// var newtext = document.createTextNode('qelque chose');
-// document.getElementById('h2').appendChild(newtext);
-
-// Maj compteur Message
 
 function supprime_ligne( ligne ){
 
